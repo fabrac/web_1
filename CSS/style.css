@@ -46,6 +46,10 @@ nav a{
     padding: 0 30px 0;
 }
 
+nav {
+    padding-right: 30px;
+}
+
 nav lu a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -56,7 +60,6 @@ nav lu a:hover{
     margin-top: 20px;
     width: 61.09px;
     height: 19px;
-    margin-left: 50px;
 }
 
 .flex{
@@ -111,6 +114,7 @@ input[type="submit"] {
     font-weight: 700;
     font-size: 18px;
 }
+
 
 .filter {
     align-items: center;
@@ -193,29 +197,26 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .container {
-padding: 0px 16px;
+padding: 0px 10px;
 }
 
 
 .host img {
 border: 5px solid #FFFFFF;
 border-radius: 20px 20px 0px 0px;
-object-fit: cover;
-height: 124px;
+height: 60%;
+max-height: 124px;
+}
+
+article img {
+    object-fit: cover;
 }
 
 .currency {
 font-weight: 700;
 }
 
-.full-star {
-color:#0065FC;
-padding-bottom: 10px;
-font-size: 12px;
-}
-
 .star {
-color:#F2F2F2;
 padding-bottom: 10px;
 font-size: 12px;
 }
@@ -233,20 +234,18 @@ article {
 }
 
 section h2 {
-    margin-left: 50px;
     font-size: 22px;
     padding-top: 20px;
 }
 
 .hosting h3 {
-    margin-left: 50px;
     font-size: 18px;
     padding-bottom: 20px;
 }
 
 .hosting {
     width: 70%;
-    height: 626px;
+    height: auto;
     justify-content: space-around;
     flex-direction: column;
 }
@@ -258,17 +257,138 @@ section h2 {
 }
 
 .border {
-    background: #F2F2F2;
     border-radius: 20px;
 }
+
+
+.bg-grey
+{
+    background: #F2F2F2;
+}
+
 
 .popular-title i {
     text-align: center;
     padding-top: 44px;
     padding-right: 50px;
     color: #0065FC;
+    font-size: 18px;
 }
 
 .popular-title {
     justify-content: space-between;
+}
+
+.contents {
+    display: contents;
+}
+
+
+.populars {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article.popular {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 144px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+  
+
+.popular p {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.popular h4 {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.popular img {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    height: 134px;
+    width: 137px;
+}
+
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color:#F2F2F2;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.pb-7 {
+    padding-bottom: 70px;
+}
+
+.pb-1 {
+    padding-bottom: 10px;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.ml-3 {
+    margin-left: 30px;
+}
+
+.activity {
+    background-color: white;
+    width: 20%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.activity img {
+    border-radius: 20px 20px 0 0;
+    height: 400px;
+    max-width: 300px;
+    width: auto;
+}
+
+footer {
+    width: 100%;
+    margin: 0 0 -50px 0;
+}
+
+.footer-section a {
+    padding-bottom:  12px;
+}
+
+.footer-section {
+    padding-top: 50px;
+    padding-right: 15%;
+    padding-bottom: 60px;
 }
