@@ -56,7 +56,8 @@ nav lu a:hover{
     padding-top: 38px;
 }
 
-#logo {
+.logo {
+    margin-left: 50px;
     margin-top: 20px;
     width: 61.09px;
     height: 19px;
@@ -110,9 +111,15 @@ input[type="text"] {
     padding-left: 20px
 }
 
-input[type="submit"] {
+button[type="submit"] {
     font-weight: 700;
     font-size: 18px;
+}
+
+
+button i {
+    position: absolute;
+    visibility:hidden;
 }
 
 
@@ -120,14 +127,16 @@ input[type="submit"] {
     align-items: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-left: 1%;
-    margin-right: 2%;
-    padding-right: 20px;
+
+    padding-right: 2%;
     height: 3em;
 }
 
-#filters {
-    flex-wrap: wrap;
+.filters {
+    justify-content: space-between;
+    padding-left: 2%;
+    width: 100%;
+    max-width: 880px;
 }
 
 #search-icon i {
@@ -170,8 +179,9 @@ input[type="submit"] {
 .host {
     display: flex;
     flex-direction: column;
-    width: 246px;
-    height: 199px;
+    width: 25%;
+    max-width: 246px;
+    height: auto;
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 30px;
@@ -254,6 +264,7 @@ section h2 {
     width: 30%;
     height: 626px;
     margin-left: 4%;
+    border-radius: 20px;
 }
 
 .border {
@@ -319,6 +330,7 @@ article.popular {
     border-radius: 20px 0px 0px 20px;
     height: 134px;
     width: 137px;
+    min-width: 137px;
 }
 
 
@@ -391,4 +403,227 @@ footer {
     padding-top: 50px;
     padding-right: 15%;
     padding-bottom: 60px;
+}
+
+.activity-list {
+    justify-content: space-between;
+}
+
+.footer-sections {
+    display: flex;
+    margin-left: 50px
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+    .sections {
+        flex-direction: column;
+    }
+
+    .hosting {
+        width: 100%;
+    }
+    .popular {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .populars {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    article.popular {
+        width: 32%;
+        margin: 0 0 30px 0;
+      }
+
+    .popular img {
+        width: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
+    }
+    .popular p {
+        font-size: 13px;
+    }
+    
+    .popular h4 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;;
+
+    }
+    .logo {
+        margin-left: 0;
+    }
+    nav {
+        justify-content: space-around;
+    }
+
+
+    nav a {
+        width: 50vw;
+        text-align: center;
+    }
+
+    nav lu a:hover{
+        border: 0;
+        color: inherit;
+    }
+    .menu-hosting{
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 20px;
+        border-top: 0px;
+    }
+
+    button i {
+        visibility: visible;
+        position: relative;
+        padding: 0;
+    }
+
+    button h3 {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #search-submit {
+        width: 80px;
+    }
+
+    .filtrate {
+        width: 90vw;
+        flex-direction: column;
+        margin-left: -30px;
+    }
+
+    .filter h3 {
+        font-size: 11px;
+    }
+
+    .filter {
+        width: 40vw;
+        min-width: 140px;
+        padding: 0;
+        margin: 0 0 17px 0;
+    }
+    .filters {
+        flex-wrap: wrap;
+        justify-content: none;
+        padding: 0;
+    }
+
+    #search-input {
+        height: 48px;
+    }
+
+    .popular {
+        border-radius: 0;
+        width: 100vw;
+        margin-left: -50px;
+    }
+
+    .populars {
+        flex-direction: column;
+    }
+
+    article.popular {
+        border-radius: 20px;
+        width: auto;
+        justify-content: none;
+        margin: 0 20px 30px 0;
+    }
+
+    .sections {
+        flex-direction: column-reverse;
+    }
+
+    .hosting {
+        background-color: #FFFFFF;
+    }
+
+    .popular img {
+        border: 5px solid #FFFFFF;
+        border-radius: 20px 0px 0px 20px;
+        height: 134px;
+        width: 40%;
+        max-width: 40%;
+        min-width: 40%;
+    }
+
+    .hosting {
+        width: 100vw;
+        margin-left: -50px;
+    }
+
+    .hosts {
+        flex-direction: column;
+    }
+
+    .host img {
+        width: auto;
+    }
+
+    .host {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .hosting h3 {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .activity-list {
+        flex-direction: column;
+    }
+
+    .activity {
+        width: 90vw;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .activity img {
+        width: 90vw;
+        max-width: 90vw;
+        height: 190px;
+    }
+
+    .activities {
+        width: 100vw;
+        margin-left: -50px;
+    }
+
+    .activities h2 {
+        margin-left: 20px;
+    }
+
+    footer {
+        margin-left: -50px;
+        width: 100vw;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        padding-bottom: 0px;
+    }
 }
