@@ -433,6 +433,8 @@ footer {
 
 @media only screen and (max-width: 991px) {
 
+    /* Header */
+
     .logo-container {
         margin-left: 20px;
     }
@@ -441,9 +443,18 @@ footer {
         padding-right: 0;
     }
 
+    /* Main */
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .sections {
         flex-direction: column;
     }
+
+    /* Popular */
 
     .popular {
         width: 100%;
@@ -463,13 +474,6 @@ footer {
     .popular__container__article {
         width: 32%;
         margin: 0 0 30px 0;
-      }
-
-    .hosting__hosts-container__host {
-        width: 220px;
-        height: 199px;
-        margin: 0;
-        margin-bottom: 30px;
     }
 
     .popular img {
@@ -486,10 +490,16 @@ footer {
         font-size: 14px;
     }
 
-    main {
-        margin-left: 20px;
-        margin-right: 20px;
+    /* Hosting */
+
+    .hosting__hosts-container__host {
+        width: 220px;
+        height: 199px;
+        margin: 0;
+        margin-bottom: 30px;
     }
+
+    /* Activities */
 
     .activities__container__activity {
         height: 260px;
