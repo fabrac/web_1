@@ -37,13 +37,13 @@
                         </div>
                         <input type="text" name="city" id="search__input" value="Marseille, France">
                         <button type="submit" id="search__submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <span>Rechercher</span>
+                            <i class="search__submit__icon fa-solid fa-magnifying-glass"></i>
+                            <span class="search__submit__span">Rechercher</span>
                         </button>
                     </form>
                 </div>
                 <!--Filters-->
-                <div class="filters">
+                <div class="filters flex">
                     <h2>Filtres</h2>
                     <div class="flex filters-container">
                         <div class="filters-container__filter flex">
@@ -81,7 +81,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Auberge La Canebière</h4>
+                                    <h3>Auberge La Canebière</h3>
                                     <p>Nuit à partir de 25<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -97,7 +97,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Hôtel du port</h4>
+                                    <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de 52<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -113,7 +113,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Hôtel Les mouettes</h4>
+                                    <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de 76<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -129,7 +129,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Hôtel de la mer</h4>
+                                    <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de 46<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -145,7 +145,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Auberge Le Panier</h4>
+                                    <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de 23<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -161,7 +161,7 @@
                             <article class="hosting__hosts-container__host">
                                 <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hebergement">
                                 <div class="container">
-                                    <h4>Hôtel Chez Amina</h4>
+                                    <h3>Hôtel Chez Amina</h3>
                                     <p>Nuit à partir de 96<span class="currency">€</span></p>
                                     <div class="flex">
                                         <i class="fa-solid fa-star star blue"></i>
@@ -178,17 +178,17 @@
                 </section>
                 <!--Populars-->
                 <section class="popular bg-grey">
-                    <div class="flex popular-title">
+                    <div class="flex popular__title">
                         <h2 class="ml-3">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <div class="populars">
+                    <div class="popular__container">
                         <a class="contents" href="#">
-                            <article class="popular">
+                            <article class="popular__container__article">
                                 <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaire">
                                 <div class="container flex column space-between">
                                     <div class="pt-1">
-                                        <h4>Hôtel Le soleil du matin</h4>
+                                        <h3>Hôtel Le soleil du matin</h3>
                                         <p>Nuit à partir de 128<span class="currency">€</span></p>
                                     </div>
                                     <div class="flex pb-1">
@@ -202,11 +202,11 @@
                             </article>
                         </a>
                         <a class="contents" href="#">
-                            <article class="popular">
+                            <article class="popular__container__article">
                                 <img src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaire">
                                 <div class="container flex column space-between">
                                     <div class="pt-1">
-                                        <h4>Chambres d’hôtes Au cœur de l’eau</h4>
+                                        <h3>Chambres d’hôtes Au cœur de l’eau</h3>
                                         <p>Nuit à partir de 71<span class="currency">€</span></p>
                                     </div>
                                     <div class="flex pb-1">
@@ -220,11 +220,11 @@
                             </article>
                         </a>
                         <a class="contents" href="#">
-                            <article class="popular">
+                            <article class="popular__container__article">
                                 <img src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaire">
                                 <div class="container flex column space-between">
                                     <div class="pt-1">
-                                        <h4>Hôtel Bleu et Blanc</h4>
+                                        <h3>Hôtel Bleu et Blanc</h3>
                                         <p>Nuit à partir de 68<span class="currency">€</span></p>
                                     </div>
                                     <div class="flex pb-1">
@@ -243,29 +243,29 @@
             <!--Activities-->
             <section class="pb-7 activities" id="activities">
                 <h2>Activités à Marseille</h2>
-                <div class="flex activity-list">
+                <div class="flex activities__container">
                     <a class="contents" href="#">
-                        <article class="activity border flex column">
+                        <article class="activities__container__activity border flex column">
                             <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="populaire">
-                            <h4 class="ml-2">Vieux-Port</h4>
+                            <h3 class="ml-2">Vieux-Port</h3>
                         </article>
                     </a>
                     <a class="contents" href="#">
-                        <article class="activity border flex column">
+                        <article class="activities__container__activity border flex column">
                             <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="populaire">
-                            <h4 class="ml-2">Fort de Pomègues</h4>
+                            <h3 class="ml-2">Fort de Pomègues</h3>
                         </article>
                     </a>
                     <a class="contents" href="#">
-                        <article class="activity border flex column">
+                        <article class="activities__container__activity border flex column">
                             <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="populaire">
-                            <h4 class="ml-2">Parc national des Calanques</h4>
+                            <h3 class="ml-2">Parc national des Calanques</h3>
                         </article>
                     </a>
                     <a class="contents" href="#">
-                        <article class="activity border flex column">
+                        <article class="activities__container__activity border flex column">
                             <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="populaire">
-                            <h4 class="ml-2">Notre-Dame-de-la-Garde</h4>
+                            <h3 class="ml-2">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
                 </div>
@@ -273,19 +273,19 @@
             <!--Footer-->
             <footer class="bg-grey">
                 <div class="footer-sections">
-                    <section class="flex column footer-section">
-                        <h4>À propos</h4>
+                    <section class="flex column footer-sections__section">
+                        <h2>À propos</h2>
                         <a href="#">Fonctionnement du site</a>
                         <a href="#">Conditions générales</a>
                         <a href="#">Données et confidentialité</a>
                     </section>
-                    <section class="flex column footer-section">
-                        <h4>Nos hébergements</h4>
+                    <section class="flex column footer-sections__section">
+                        <h2>Nos hébergements</h2>
                         <a href="#">Charte qualité</a>
                         <a href="#">Proposer votre hôtel</a>
                     </section>
-                    <section class="flex column footer-section">
-                        <h4>Assistance</h4>
+                    <section class="flex column footer-sections__section">
+                        <h2>Assistance</h2>
                         <a href="#">Centre d’aide</a>
                         <a href="#">Nous contacter</a>
                     </section>
