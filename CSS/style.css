@@ -17,11 +17,13 @@ ul {
 h1 {
     font-weight: 700;
     font-size: 22px;
+    word-break: break-word
 }
 
 h2 {
     font-weight: 700;
     font-size: 18px;
+    word-break: break-word
 }
 
 h3 {
@@ -33,6 +35,7 @@ h3 {
 a {
     text-decoration: none;
     color: inherit;
+    word-break: break-word
 }
 
 article {
@@ -75,7 +78,7 @@ section h2 {
 
 /* Display */
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -231,7 +234,7 @@ button[type="submit"] {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 
-    padding-right: 2%;
+    padding-right: 1.5%;
     height: 3em;
 }
 
@@ -417,7 +420,7 @@ footer {
 
 .footer-sections__section {
     padding-top: 30px;
-    padding-right: 18%;
+    padding-right: 17%;
     padding-bottom: 60px;
 }
 
@@ -551,6 +554,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 0;
+        width: 100%;
     }
 
     nav ul {
@@ -561,6 +565,8 @@ footer {
     nav a {
         width: 100%;
         text-align: center;
+        padding: 0;
+        word-break: break-word
     }
 
     nav li {
@@ -594,12 +600,13 @@ footer {
     }
 
     #search {
-        width: 100%;
+        width: 100%;        
     }
 
     #search__input {
         height: 48px;
         width: 100%;
+        flex-grow: 1;
     }
 
     #search__submit {
@@ -616,6 +623,7 @@ footer {
     .search__submit__span {
         visibility: hidden;
         position: absolute;
+        display: none;
     }
 
     /* Filters */
@@ -755,4 +763,4 @@ footer {
     .footer-sections__section {
         padding-bottom: 0px;
     }
-}
+}   
